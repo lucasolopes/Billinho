@@ -1,0 +1,17 @@
+# PostgreSQL. Versions 9.3 and up are supported.
+default: &default
+  host: db
+  adapter: postgresql
+  encoding: unicode
+  username: root
+  password: 'root'
+development:
+  <<: *default
+  database: Billinho_development
+test:
+  <<: *default
+  database: Billinho_test
+production:
+  <<: *default
+  database: Billinho_production
+  
