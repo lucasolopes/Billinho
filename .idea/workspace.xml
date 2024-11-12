@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bce61984-9c75-4e55-9502-50d654db113c" name="Changes" comment="Initialize" />
+    <list default="true" id="bce61984-9c75-4e55-9502-50d654db113c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +75,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.rails: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
     "Notification.DoNotAsk-Database detector": "true",
@@ -96,7 +97,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.rails: Compose Deployment">
     <configuration name="Billinho" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="Billinho" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -199,10 +200,24 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.rails: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rails" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.rails: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
       </list>
@@ -225,7 +240,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731349425686</updated>
       <workItem from="1731349426808" duration="1387000" />
-      <workItem from="1731350839463" duration="3279000" />
+      <workItem from="1731350839463" duration="4684000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize new Rails application with essential files and configurations">
       <option name="closed" value="true" />
